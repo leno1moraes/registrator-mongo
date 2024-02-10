@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+
+  backend:
+    build: backend
+    ports:
+      - 8001:8001
+    networks:
+      - spring-boot-mongodb  
+
+  mongodb:
+    image: mongo:7.0.5
+    container_name: my-mongodb-container
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb-data:/data/db
+    networks:
+      - spring-boot-mongodb       
+
+  mongo-express:
+    image: mongo-express:1.0.2
+    container_name: mongo-express-container
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=mongodb #server do container
+      - ME_CONFIG_MONGODB_PORT=27017
+      #- ME_CONFIG_MONGODB_AUTH_USERNAME=admin
+      #- ME_CONFIG_MONGODB_AUTH_PASSWORD=pass
+    ports:
+      - "8002:8081"
+    networks:
+      - spring-boot-mongodb          
+
+volumes:
+  mongodb-data:
+
+networks:
+  spring-boot-mongodb:  
