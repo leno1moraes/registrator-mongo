@@ -1,10 +1,11 @@
-Tecnologias Usadas
+**Tecnologias Usadas**
 
 React Native + Vite + Mongo DB + Mongo Express + Spring Boot Spring Framework + docker + vagrant
 
 
-Estrutura
+**Estrutura**
 
+```
 Projeto/
 ├── backend/
 |   ├── src/
@@ -37,3 +38,9 @@ Projeto/
 ├── Vagrantfile
 ├── provision.sh
 └── docker-compose.yml
+```
+
+**Comando para levantar os containers**
+docker compose up -d
+
+
