@@ -41,6 +41,7 @@ Projeto/
 ```
 
 **Comando para levantar os containers**
+
 docker compose up -d
 
 
