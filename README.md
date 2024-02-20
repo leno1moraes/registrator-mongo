@@ -40,8 +40,16 @@ Projeto/
 └── docker-compose.yml
 ```
 
-**Comando para levantar os containers**
+**Docker**
 
-docker compose up -d
+**Comando para lenvantar os container:** docker compose up -d
+
+**versão do Docker:** Docker version 25.0.3
+
+**versão do Docker Compose:** docker-compose version 1.29.2
+
+
+
+
 
 
