@@ -44,3 +44,18 @@
 table{
   width: 100%;
 }
+
+
+.myForm{
+  display: flex;
+  flex-direction: column;    
+}
+
+.myForm label {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.myForm input[type="submit"] {
+  margin-top: 20px;
+}

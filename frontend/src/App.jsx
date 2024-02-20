@@ -73,14 +73,12 @@ function App() {
       <hr />
       
       <div className="add-registrator">
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='myForm'>
           <label htmlFor="ip">Endereço</label>
-          <input type="text" value={ip} name='ip' onChange={(e) => setIp(e.target.value)}/>
-
+          <input type="text" value={ip} name='ip' className='inp-form' onChange={(e) => setIp(e.target.value)}/>
           <label htmlFor="local">Local</label>
-          <input type="text" value={local} name="local" onChange={(e) => setLocal(e.target.value)}/>
-
-          <input type="submit" value="Enviar" />
+          <input type="text" value={local} name="local" className='inp-form' onChange={(e) => setLocal(e.target.value)}/>
+          <input type="submit" value="Salvar" />
         </form>
       </div>
 
