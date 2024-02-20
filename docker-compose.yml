@@ -37,7 +37,7 @@ services:
   frontend:
     image: node:alpine
     container_name: my-frontend
-    entrypoint: /bin/sh
+    entrypoint: npm run dev
     ports:
       - 8080:8080
     networks:
@@ -45,7 +45,7 @@ services:
     working_dir: /srv/app
     volumes:
       - ./frontend:/srv/app
-    tty: true      
+    tty: true    
 
 volumes:
   mongodb-data:
