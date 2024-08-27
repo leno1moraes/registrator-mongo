@@ -37,7 +37,7 @@ services:
   frontend:
     image: node:alpine
     container_name: my-frontend
-    entrypoint: npm run dev
+    entrypoint: sh -c "npm install && npm run dev"
     ports:
       - 8080:8080
     networks:

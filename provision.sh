@@ -3,16 +3,16 @@
 apt-get update -y
 apt-get upgrade -y
 
-# Install prerequisites
-apt-get install -y apt-transport-https ca-certificates curl software-properties-common
+# # Install prerequisites
+# apt-get install -y apt-transport-https ca-certificates curl software-properties-common
 
-# Install Docker
-curl -fsSL https://get.docker.com | sh
-usermod -aG docker vagrant
+# # Install Docker
+# curl -fsSL https://get.docker.com | sh
+# usermod -aG docker vagrant
 
-# Install Docker Compose
-curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-chmod +x /usr/local/bin/docker-compose
+# # Install Docker Compose
+# curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+# chmod +x /usr/local/bin/docker-compose
 
 # Install Node.js 14
 #curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
@@ -29,3 +29,16 @@ apt-get install -y npm
 mkdir -p /projeto
 
 chmod -R 777 /projeto
+
+# Remover a pasta node_modules caso ela exista
+if [ -d "/projeto/frontend/node_modules" ]; then
+    rm -rf /projeto/frontend/node_modules
+fi
+
+# Navegar até a pasta /projeto e executar os comandos npm
+cd /projeto
+npm install
+npm run dev
+
+# Sair do script
+exit 0
