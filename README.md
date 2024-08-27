@@ -92,4 +92,3 @@ Projeto/
 ![image](https://github.com/leno1moraes/registrator-mongo/assets/47091156/a9ae2017-e931-4f47-815f-cc418b2cc7b0)
 
 
-Projeto baseado no curso: 
