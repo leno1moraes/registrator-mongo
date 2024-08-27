@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/66d28052-470b-48cf-a8af-e0905e6fb3ed)
+
 # Projeto registrador de tarefas (Registrator)
 
 Bem-vindo ao **Registrator**, um projeto de aplicação para gerenciar e registrar tarefas, desenvolvido utilizando as tecnologias S**pring Boot, React JS (Vite), Docker e Vagrant**. Este projeto visa fornecer uma solução simples e eficiente para o gerenciamento de tarefas, permitindo que os usuários criar e excluir tarefas com facilidade.
